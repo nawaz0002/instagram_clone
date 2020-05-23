@@ -32,13 +32,9 @@ const customMiddleware = (req, res, next) => {
     next();
 }
 
+app.use('/', otherProfileRoute)
 app.use('/auth', authRoute)
 app.use('/post', postRoute)
-app.use('/', otherProfileRoute)
-
-app.get('/', customMiddleware, (req, res) => {
-    res.send('heyy');
-})
 
 if(process.env.NODE_ENV == "production"){
     app.use(express.static('client/build'))
