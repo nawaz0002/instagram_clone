@@ -174,7 +174,7 @@ const Home = () => {
                 }
                 
                 )
-                : <h1><img src={loading} alt="loading..." style={{width: '200px', margin: 'auto', display: 'block'}}/></h1>
+                : <h5 className="center-align" style={{marginTop: '3rem'}}>You haven't followed anyone yet..please follow to see the post of them</h5>
             }
         </div>
     )

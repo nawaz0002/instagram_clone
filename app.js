@@ -13,6 +13,8 @@ const otherProfileRoute = require('./route/otherProfile');
 // model
 const User = require('./model/user')
 
+app.use(cors());
+
 // database connection
 mongoose.connect(MONGOURI, { useUnifiedTopology: true, useNewUrlParser: true})
 mongoose.connection.on('connected', () => {
@@ -22,7 +24,6 @@ mongoose.connection.on('error', () => {
     console.log('error connecting');
 })
 
-app.use(cors());
 
 // middlewares
 app.use(express.json());
@@ -47,5 +48,3 @@ if(process.env.NODE_ENV == "production"){
 app.listen(PORT, () => {
     console.log(`server is running in port ${PORT}`)
 })
-
-// "proxy": "http://localhost:8000",
