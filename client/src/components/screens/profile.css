@@ -1,0 +1,76 @@
+.profile-img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.profile-container{
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+    width: 70%;
+    margin: 1rem auto;
+    padding: 2rem 0;
+    border-bottom: 1px solid grey;
+}
+.profile-first{
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+.profile-second{
+    flex: 0 0 35%;
+    max-width: 35%;
+}
+.profile-name-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: 1rem auto;
+}
+.profile-item{
+    width: 240px;
+    height: 220px;
+    margin: 1rem 0;
+}
+.profile-image-container{
+    position: relative;
+}
+
+.delete-post{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+@media (max-width: 480px){
+    .profile-container{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-first{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .file-field .file-path-wrapper{
+        overflow: unset;
+    }
+    .file-field .btn, .file-field .btn-large, .file-field .btn-small{
+        float: unset;
+    }
+    .profile-second{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .profile-name-container h6{
+        margin: 0 5px;
+    }
+}

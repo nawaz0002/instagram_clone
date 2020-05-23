@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+nav a{
+    color: black !important;
+}
+.brand-logo, h2{
+    font-family: 'Grand Hotel', cursive;
+}
+.my-card{
+    margin-top: 2rem;
+}
+.auth-card{
+    width: 35%;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+.input-field input[type=text]:focus{
+    border-bottom: 1px solid rgb(8, 93, 252) !important;
+    box-shadow:  0 1px 0 0 rgb(8, 93, 252) !important;
+}
+.input-field input[type=password]:focus{
+    border-bottom: 1px solid rgb(8, 93, 252) !important;
+    box-shadow:  0 1px 0 0 rgb(8, 93, 252) !important;
+}
+
+/* home styling */
+.home-card{
+    max-width: 50%;
+    margin: 26px auto;
+    height: max-content;
+    padding: .1rem 0;
+}
+
+/* create post */
+.create-post-container{
+    margin: 3rem auto;
+    max-width: 45%;
+    padding: 3rem;
+    text-align: center;
+}
+
+#toast-container{
+    top: 55px !important;
+    right: 20px !important;
+    left: auto !important;
+}
+
+.like-btn{
+    cursor: pointer;
+}
+
+/* p */
+.profile-user-container{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.profile-user{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.name-user{
+    font-weight: bold;
+    font-size: 18px;
+}
+.comment-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete-cmt{
+    color: red;
+    font-size: 16px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+.profile-image{
+    height: 350px;
+    object-fit: fill;
+    width: 100%;
+}
+.search{
+    color: rgba(0,0,0,0.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+}
+.logout{
+    margin-left: 32px;
+}
+.profile-image{
+    height: 600px;
+}
+@media (max-width: 480px){
+    .create-post-container{
+        max-width: 80%;
+        padding: 2rem;
+    }
+    nav a.button-collapse {
+        display: block;
+    }
+    .home-card{
+        max-width: 80%;
+    }
+    .profile-image{
+        height: 500px !important;
+    }
+    .auth-card{
+        width: 80%;
+    }
+}
